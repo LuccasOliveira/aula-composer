@@ -8,5 +8,6 @@ RUN curl https://getcomposer.org/composer.phar --output /usr/bin/composer
 RUN chmod +x /usr/bin/composer
 
 COPY entrypoint.sh /usr/bin/entrypoint.sh
+ENTRYPOINT [ "sh", "/usr/bin/entrypoint.sh" ]
 
 WORKDIR /app
