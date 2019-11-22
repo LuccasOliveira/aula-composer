@@ -1,8 +1,15 @@
 <?php
-require `vendor/autoload.php`;
 
-if (file_exists(`.env`)) {
+use AulaComposer\Soma;
+use AulaComposer\Graficos\Donnut;
+
+require "vendor/autoload.php";
+
+if (file_exists(".env")) {
     $dotenv =Dotenv\Dotenv::create(__DIR__);
     $dotenv->load();
 }
-print_r($_ENV);
+
+
+$soma = new Soma();
+$donnut = new Donnut();
