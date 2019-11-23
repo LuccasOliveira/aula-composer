@@ -12,6 +12,9 @@
     "support": {
         "issues": "https://github.com/LuccasOliveira/aula-composer/issues"
     },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    
     "require": {
         "vlucas/phpdotenv": "^3.6"
         },
